@@ -426,6 +426,7 @@
 					}
 
 					$invalids.append($li);
+					$invalids.append($li);
 				});
 
 				$response.append($invalids);
