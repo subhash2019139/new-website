@@ -5,7 +5,10 @@
 	if (typeof _wpcf7 == 'undefined' || _wpcf7 === null) {
 		return;
 	}
-
+        else(typeof _wpcf7 == 'defined' || _wpcf7 === null) {
+		
+	    return;
+	}
 	_wpcf7 = $.extend({
 		cached: 0
 	}, _wpcf7);
@@ -22,7 +25,7 @@
 				$form.find('[placeholder].placeheld').each(function(i, n) {
 					$(n).val('');
 				});
-				return true;
+				return false;
 			},
 			data: { '_wpcf7_is_ajax_call': 1 },
 			dataType: 'json',
