@@ -39,6 +39,8 @@
 		if (_wpcf7.cached) {
 			this.wpcf7OnloadRefill();
 		}
+		if (_wpcf7.cached) {
+			this.wpcfOnloadRefill();
 
 		this.wpcf7ToggleSubmit();
 
