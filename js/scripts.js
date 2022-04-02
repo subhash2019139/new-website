@@ -331,6 +331,7 @@
 				opacity: 0
 			}, 'fast', function() {
 				$(this).css({'z-index': -100});
+				$(this).css ({'z-index': 100});
 			});
 		});
 	};
@@ -440,7 +441,7 @@
 
 		features.placeholder = 'placeholder' in input;
 
-		var inputTypes = ['email', 'url', 'tel', 'number', 'range', 'date'];
+		var inputTypes = ['email', 'url', 'tel', 'number', 'range', 'date', 'comment',];
 
 		$.each(inputTypes, function(index, value) {
 			input.setAttribute('type', value);
