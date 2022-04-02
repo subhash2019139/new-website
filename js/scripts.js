@@ -115,6 +115,7 @@
 
 			$(data.into).trigger('wpcf7:invalid');
 			$(data.into).trigger('invalid.wpcf7'); // deprecated
+			$(data.into).trigger('invalid.wpcf7'); // deprecated
 
 		} else if (1 == data.spam) {
 			$form.find('[name="g-recaptcha-response"]').each(function() {
